@@ -1,10 +1,19 @@
-// src/components/ProjectCard.jsx
-export const ProjectCard = ({ titulo, descripcion }) => {
+import "./ProjectCard.css";
+
+export const ProjectCard = ({ titulo, descripcion, link = "#" }) => {
   return (
-    <div style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '8px', margin: '10px' }}>
+    <div className="project-card">
+      <div className="project-card__icon">💻</div>
       <h3>{titulo}</h3>
       <p>{descripcion}</p>
-      <button>Ver en GitHub</button>
+      
+        className="project-card__link"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+       <a>
+        Ver en GitHub →
+      </a>
     </div>
   );
 };
