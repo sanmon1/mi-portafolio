@@ -19,10 +19,13 @@ function App() {
           <ProjectCard
             titulo="Mi Primera API"
             descripcion="Un backend desarrollado para gestionar datos de manera eficiente."
+            link="https://github.com/sanmon1/CRUD.git"
           />
           <ProjectCard
-            titulo="App de Clima"
-            descripcion="Consultando datos en tiempo real con Fetch."
+            titulo="Buscador interactivo de personajes de Rick & Morty"
+            descripcion="El proyecto permite explorar el catálogo completo de personajes, detallando su especie, 
+             su estado de vida actual y el episodio en el que hicieron su primera aparición. Todo esto desarrollado con la api oficial de Rick & Morty."
+            link="https://github.com/sanmon1/Creacion-de-api.git"
           />
         </div>
       </section>
@@ -31,8 +34,8 @@ function App() {
         <div className="projects-section__header">
           <h2>Sobre mí</h2>
           <p>
-            Estoy formándome como desarrollador web, enfocado en React y en
-            escribir código prolijo y fácil de mantener.
+            Soy un desarrollador full stack. enfocado en seguir aprendiendo y creciendo en el mundo del desarrollo web. 
+            Me gusta trabajar en proyectos que me desafíen y me permitan mejorar mis habilidades tanto personales como laborales.
           </p>
         </div>
       </section>
