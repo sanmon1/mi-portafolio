@@ -9,7 +9,7 @@ export const ProjectCard = ({ titulo, descripcion, link = "#" }) => {
       <h3>{titulo}</h3>
 
       <p>{descripcion}</p>
-       <a className="project-card__link"
+       <a className="btn-outline"
         href={link}
         target="_blank"
         rel="noopener noreferrer">

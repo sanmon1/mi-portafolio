@@ -35,7 +35,7 @@
   flex-grow: 1;
 }
 
-.project-card__link {
+/* .project-card__link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -52,4 +52,4 @@
 .project-card__link:hover {
   border-color: var(--accent);
   background: var(--accent-bg);
-}
+} */

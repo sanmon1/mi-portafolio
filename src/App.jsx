@@ -37,18 +37,33 @@ function App() {
             Soy un desarrollador full stack. enfocado en seguir aprendiendo y creciendo en el mundo del desarrollo web. 
             Me gusta trabajar en proyectos que me desafíen y me permitan mejorar mis habilidades tanto personales como laborales.
           </p>
+        
         </div>
       </section>
 
-      <section id="contacto">
+      { <section id="contacto">
         <div className="projects-section__header">
           <h2>Contacto</h2>
           <p>¿Querés trabajar conmigo? Escribime y charlamos.</p>
+          <p>📧Gmail: santiagomoyanoministro@gmail.com</p>
+          <p><span className="icon icon-whatsapp"></span>Numero: 3517035856</p>
+          <span className="icon icon-linkedin"></span>
+            <a classname="btn-outline"
+              href="https://www.linkedin.com/in/santiago-moyano-ministro-954575420/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline"
+            >
+              Linkedin
+            </a>
+          
         </div>
-      </section>
+      </section> }
 
+     
       <footer className="footer">
         © {new Date().getFullYear()} Santi.dev — Hecho con React
+         
       </footer>
     </div>
   );
