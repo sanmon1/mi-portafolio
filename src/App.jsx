@@ -2,8 +2,20 @@ import { Navbar } from "./Components/Navbar";
 import { Hero } from "./Components/Hero";
 import { ProjectCard } from "./Components/ProjectCard";
 import "./App.css";
+import { useState } from "react";
+
+
 
 function App() {
+
+const [copiado, setCopiado] = useState(false);
+
+const copiarEmail = () => {
+  navigator.clipboard.writeText("santiagomoyanoministro@gmail.com");
+  setCopiado(true);
+  setTimeout(() => setCopiado(false), 2000);
+};
+
   return (
     <div className="app">
       <Navbar />
@@ -45,19 +57,45 @@ function App() {
         <div className="projects-section__header">
           <h2>Contacto</h2>
           <p>¿Querés trabajar conmigo? Escribime y charlamos.</p>
-          <p>📧Gmail: santiagomoyanoministro@gmail.com</p>
-          <p><span className="icon icon-whatsapp"></span>Numero: 3517035856</p>
-          <span className="icon icon-linkedin"></span>
-            <a classname="btn-outline"
+          <p>
+            <a
+            className="contact__link" onClick={copiarEmail}
+            
+            >
+            <span className="icon icon-email"></span>
+            {copiado ? "Email copiado" : "santiagomoyanoministro@gmail.com"}
+            </a>
+          </p>
+
+          <p>
+            <a
+            
+              className="contact__link"
+              href="https://api.whatsapp.com/send?phone=3517035856"
+              target="_blank"
+              rel="noopener noreferrer"
+                
+            >
+              <span className="icon icon-whatsapp"></span>
+              3517035856
+              
+            </a> 
+          </p>
+
+          <p>
+            <a className="contact__link"
               href="https://www.linkedin.com/in/santiago-moyano-ministro-954575420/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline"
-            >
+              
+            > 
+
+              <span className="icon icon-linkedin"></span>
               Linkedin
             </a>
-          
+          </p>
         </div>
+        
       </section> }
 
      
